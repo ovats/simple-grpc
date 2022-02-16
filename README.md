@@ -14,15 +14,22 @@ This is my first try with gRPC using Scala.
 - run `sbt compile` to generate the classes for protobuf.
 - classes will be generated in the folder `target/scala-x.yz/src_managed`.
 - add the classes for the server in the package `com.gm.grpc.server`.
+- add the classes for the client in the package `com.gm.grpc.client`.
 
 ## Run
 
 Start the server:
 
-`sbt "runMain com.gm.grpc.server.AnalyzeTextServerApp"`
+`sbt "runMain com.gm.grpc.server.AnalyzeTextServerApp"`.
+
+To run the client:
+
+`sbt "runMain com.gm.grpc.server.AnalyzeTextClientApp"`.
+
 
 ## Improvements/enhancements
 
 - update `sbt` version.
 - update `scala` version.
 - update dependencies versions.
+- use PureConfig for parameters.
