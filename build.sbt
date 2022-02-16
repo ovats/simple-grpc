@@ -17,4 +17,4 @@ libraryDependencies ++= Seq(
   "com.thesamet.scalapb" %% "scalapb-json4s"       % scalapbVersion,
 )
 
-scalacOptions in ThisBuild ++= Seq("-unchecked", "-deprecation")
+ThisBuild / scalacOptions ++= Seq("-unchecked", "-deprecation")

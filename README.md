@@ -29,7 +29,7 @@ To run the client:
 
 ## Improvements/enhancements
 
-- update `sbt` version.
-- update `scala` version.
+- update `sbt` version. => updated to 1.5.7.
+- update `scala` version. => updated to 2.12.5.
 - update dependencies versions.
 - use PureConfig for parameters.
