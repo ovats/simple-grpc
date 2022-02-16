@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+import "scalapb/scalapb.proto";
+
+option (scalapb.options) = {
+  package_name: "com.gm.grpc.analyzetext"
+  flat_package: true
+};
+
+package analyzetext;
+
+// grpc service definition
+service AnalyzeText {
+  rpc analyzeText (TextRequest) returns (AnalyzeResponse) {}
+}
+
+// Text to be analyzed.
+message TextRequest {
+  string message = 1;
+}
+
+// The analysis of the text.
+message AnalyzeResponse {
+  string message = 1;
+}
