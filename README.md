@@ -24,7 +24,7 @@ Start the server:
 
 To run the client:
 
-`sbt "runMain com.gm.grpc.server.AnalyzeTextClientApp"`.
+`sbt "runMain com.gm.grpc.client.AnalyzeTextClientApp"`.
 
 
 ## Improvements/enhancements
