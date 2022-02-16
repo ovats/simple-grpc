@@ -11,12 +11,10 @@ PB.targets in Compile := Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.thesamet.scalapb" %% "scalapb-runtime" % scalapbVersion % "protobuf",
-  // for gRPC
+  "com.thesamet.scalapb" %% "scalapb-runtime"      % scalapbVersion % "protobuf",
   "io.grpc"               % "grpc-netty"           % grpcJavaVersion,
   "com.thesamet.scalapb" %% "scalapb-runtime-grpc" % scalapbVersion,
-  // for JSON conversion
-  "com.thesamet.scalapb" %% "scalapb-json4s" % scalapbVersion,
+  "com.thesamet.scalapb" %% "scalapb-json4s"       % scalapbVersion,
 )
 
 scalacOptions in ThisBuild ++= Seq("-unchecked", "-deprecation")
