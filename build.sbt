@@ -4,10 +4,10 @@ name := "simple-grpc"
 
 version := "0.1"
 
-scalaVersion := "2.12.4"
+scalaVersion := "2.12.5"
 
-PB.targets in Compile := Seq(
-  scalapb.gen() -> (sourceManaged in Compile).value
+Compile / PB.targets := Seq(
+  scalapb.gen() -> (Compile / sourceManaged).value
 )
 
 libraryDependencies ++= Seq(
@@ -17,4 +17,4 @@ libraryDependencies ++= Seq(
   "com.thesamet.scalapb" %% "scalapb-json4s"       % scalapbVersion,
 )
 
-scalacOptions in ThisBuild ++= Seq("-unchecked", "-deprecation")
+ThisBuild / scalacOptions ++= Seq("-unchecked", "-deprecation")
