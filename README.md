@@ -29,7 +29,8 @@ To run the client:
 
 ## Improvements/enhancements
 
-- update `sbt` version. => updated to 1.5.7.
-- update `scala` version. => updated to 2.12.5.
-- update dependencies versions.
-- use PureConfig for parameters.
+- update `sbt` version. => updated to `1.5.7`.
+- update `scala` version. => updated to `2.12.5`.
+- update dependencies versions. => done
+- use PureConfig for parameters. => done. However, I had to update the `scala` version to `2.12.4`,
+  for some reason `pureconfig` library presented issues with version `2.12.5`.  
